@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">t1000_ceva</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="attendant">Attendant</string>
+    <string name="supervisor">Supervisor</string>
+    <string name="deposit">Deposit</string>
+    <string name="transfer">Transfer</string>
+    <string name="airtime">Airtime</string>
+    <string name="pay_bills">Pay Bills</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="next">Next</string>
 </resources>

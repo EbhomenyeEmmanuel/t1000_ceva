@@ -8,6 +8,26 @@
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.t1000_ceva.ui.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.t1000_ceva.ui.StartFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_splash"></fragment>
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_startFragment_to_attendantMenuFragment"
+            app:destination="@id/attendantMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attendantMenuFragment"
+        android:name="com.example.t1000_ceva.ui.AttendantMenuFragment"
+        android:label="Attendant Menu"
+        tools:layout="@layout/fragment_attendant_menu" />
 </navigation>
