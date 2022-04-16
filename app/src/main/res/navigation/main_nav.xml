@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_attendantMenuFragment_to_validateAccountNumberFragment"
             app:destination="@id/validateAccountNumberFragment" />
+        <action
+            android:id="@+id/action_attendantMenuFragment_to_airtimePurchaseFragment"
+            app:destination="@id/airtimePurchaseFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmAccountNumberFragment"
@@ -63,4 +66,9 @@
             app:popUpTo="@+id/attendantMenuFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/airtimePurchaseFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.airtime.AirtimePurchaseFragment"
+        android:label="Airtime Purchase"
+        tools:layout="@layout/fragment_airtime_purchase" />
 </navigation>
