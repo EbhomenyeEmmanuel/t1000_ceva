@@ -8,7 +8,7 @@
     <string name="pay_bills">Pay Bills</string>
     <string name="withdraw">Withdraw</string>
     <string name="next">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enter_account_number">Enter account number</string>
     <string name="amount">Amount</string>
@@ -17,4 +17,14 @@
     <string name="purchase">Purchase</string>
     <string name="pin">Pin</string>
     <string name="select_operator">Select Operator</string>
+
+    <string name="cash_withdrawal">Cash Withdrawal</string>
+    <string name="card_withdrawal">Card Withdrawal</string>
+
+    <string name="destination_type">Destination Type</string>
+    <string name="enter_attendant_pin">Enter Attendant Pin</string>
+    <string name="enter_deposit_amount">Enter Deposit Amount</string>
+    <string name="enter_otp">Enter OTP</string>
+
+
 </resources>
