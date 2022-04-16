@@ -5,13 +5,11 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import com.example.t1000_ceva.R
-import com.example.t1000_ceva.commons.navController
-import com.example.t1000_ceva.commons.viewBinding
+import com.example.t1000_ceva.utils.navController
 import com.example.t1000_ceva.databinding.FragmentSplashBinding
+import com.example.t1000_ceva.utils.viewBinding
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
 

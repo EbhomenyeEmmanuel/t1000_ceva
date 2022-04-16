@@ -1,4 +1,4 @@
-package com.example.t1000_ceva.commons
+package com.example.t1000_ceva.utils
 
 import android.view.View
 import androidx.fragment.app.Fragment

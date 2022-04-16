@@ -6,13 +6,13 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.t1000_ceva.R
-import com.example.t1000_ceva.commons.navController
-import com.example.t1000_ceva.commons.showSnack
-import com.example.t1000_ceva.commons.viewBinding
+import com.example.t1000_ceva.utils.navController
+import com.example.t1000_ceva.utils.showSnack
 import com.example.t1000_ceva.databinding.FragmentAttendantMenuBinding
 import com.example.t1000_ceva.domain.model.AttendantMenuTypes
 import com.example.t1000_ceva.domain.model.ImageTitleItem
 import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
+import com.example.t1000_ceva.utils.viewBinding
 
 
 class AttendantMenuFragmentImageTitleItem(
@@ -68,6 +68,7 @@ class AttendantMenuFragment : Fragment(R.layout.fragment_attendant_menu) {
         list.adapter = ImageTitleAdapter(requireActivity(), attendantTypeList) {
             when (attendantTypeList[it].attendantMenuTypes) {
                 AttendantMenuTypes.DEPOSIT -> {
+
                     navController.navigate(R.id.action_attendantMenuFragment_to_validateAccountNumberFragment)
                 }
                 AttendantMenuTypes.TRANSFER -> {

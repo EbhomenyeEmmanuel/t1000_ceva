@@ -1,4 +1,4 @@
-package com.example.t1000_ceva.commons
+package com.example.t1000_ceva.utils
 
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController

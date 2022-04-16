@@ -6,14 +6,14 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.t1000_ceva.R
-import com.example.t1000_ceva.commons.navController
-import com.example.t1000_ceva.commons.showSnack
-import com.example.t1000_ceva.commons.viewBinding
+import com.example.t1000_ceva.utils.navController
+import com.example.t1000_ceva.utils.showSnack
 import com.example.t1000_ceva.databinding.FragmentStartBinding
 import com.example.t1000_ceva.domain.model.LoginTypeImageTitleItem
 import com.example.t1000_ceva.domain.model.POSLoginTypes
 import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
 import com.example.t1000_ceva.utils.observeInLifecycle
+import com.example.t1000_ceva.utils.viewBinding
 import com.example.t1000_ceva.viewmodels.FetchUserState
 import com.example.t1000_ceva.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint

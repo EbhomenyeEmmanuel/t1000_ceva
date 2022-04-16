@@ -6,10 +6,10 @@ import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView
 import com.example.t1000_ceva.R
-import com.example.t1000_ceva.commons.navController
-import com.example.t1000_ceva.commons.viewBinding
+import com.example.t1000_ceva.utils.navController
 import com.example.t1000_ceva.databinding.FragmentAirtimePurchaseBinding
 import com.example.t1000_ceva.domain.AirtimeOperator
+import com.example.t1000_ceva.utils.viewBinding
 
 class AirtimePurchaseFragment : Fragment(R.layout.fragment_airtime_purchase) {
     private val binding by viewBinding<FragmentAirtimePurchaseBinding>()
