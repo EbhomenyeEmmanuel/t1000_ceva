@@ -1,7 +1,7 @@
 package com.example.t1000_ceva.data.api
 
 object ApiConstants {
-    const val BASE_ENDPOINT = "http://"
+    const val BASE_ENDPOINT = "http://test.com"
     const val API_CONTENT_TYPE = "Content-Type: application/json"
 }
 
