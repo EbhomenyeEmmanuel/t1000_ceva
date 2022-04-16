@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_attendantMenuFragment_to_payBillsFragment"
             app:destination="@id/payBillsFragment" />
+        <action
+            android:id="@+id/action_attendantMenuFragment_to_withdrawFragment"
+            app:destination="@id/withdrawFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmAccountNumberFragment"
@@ -48,6 +51,9 @@
         <action
             android:id="@+id/action_confirmAccountNumberFragment_to_depositFragment"
             app:destination="@id/depositFragment" />
+        <action
+            android:id="@+id/action_confirmAccountNumberFragment_to_cashWithdrawalFragment"
+            app:destination="@id/cashWithdrawalFragment" />
     </fragment>
     <fragment
         android:id="@+id/validateAccountNumberFragment"
@@ -62,13 +68,7 @@
         android:id="@+id/depositFragment"
         android:name="com.example.t1000_ceva.ui.attendant.deposit.DepositFragment"
         android:label="fragment_deposit"
-        tools:layout="@layout/fragment_deposit">
-        <action
-            android:id="@+id/action_depositFragment_to_attendantMenuFragment"
-            app:destination="@id/attendantMenuFragment"
-            app:popUpTo="@+id/attendantMenuFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_deposit"/>
     <fragment
         android:id="@+id/airtimePurchaseFragment"
         android:name="com.example.t1000_ceva.ui.attendant.airtime.AirtimePurchaseFragment"
@@ -79,4 +79,18 @@
         android:name="com.example.t1000_ceva.ui.attendant.pay_bills.PayBillsFragment"
         android:label="fragment_pay_bills"
         tools:layout="@layout/fragment_pay_bills" />
+    <fragment
+        android:id="@+id/withdrawFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.withdraw.WithdrawFragment"
+        android:label="fragment_withdraw"
+        tools:layout="@layout/fragment_withdraw" >
+        <action
+            android:id="@+id/action_withdrawFragment_to_validateAccountNumberFragment"
+            app:destination="@id/validateAccountNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cashWithdrawalFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.withdraw.CashWithdrawalFragment"
+        android:label="fragment_cash_withdrawal"
+        tools:layout="@layout/fragment_cash_withdrawal" />
 </navigation>
