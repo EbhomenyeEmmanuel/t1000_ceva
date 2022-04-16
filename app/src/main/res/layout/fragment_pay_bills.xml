@@ -10,8 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:background="@color/light_grey"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="24dp">
 
@@ -85,4 +85,14 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bill_payment_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/bill_payment_type_list_item"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+
 </LinearLayout>

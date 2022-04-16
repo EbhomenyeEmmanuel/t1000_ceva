@@ -8,11 +8,12 @@
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/drawable/bills_position_bg_default.xml" value="0.2555" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/drawable/bills_position_bg_selected.xml" value="0.2555" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/bill_payment_type_list_item.xml" value="0.1" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_airtime_purchase.xml" value="0.1" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_attendant_menu.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_confirm_account_number.xml" value="0.2777777777777778" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_deposit.xml" value="0.11787072243346007" />
-        <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_pay_bills.xml" value="0.4" />
+        <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_pay_bills.xml" value="0.264" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_splash.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_start.xml" value="0.264" />
         <entry key="..\:/Users/Emmanuel.Ebhomenye/AndroidStudioProjects/t1000_ceva/app/src/main/res/layout/fragment_validate_account_number.xml" value="0.23596014492753623" />
