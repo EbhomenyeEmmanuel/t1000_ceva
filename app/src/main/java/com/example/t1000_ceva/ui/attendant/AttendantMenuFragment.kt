@@ -1,4 +1,4 @@
-package com.example.t1000_ceva.ui
+package com.example.t1000_ceva.ui.attendant
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -12,8 +12,6 @@ import com.example.t1000_ceva.commons.viewBinding
 import com.example.t1000_ceva.databinding.FragmentAttendantMenuBinding
 import com.example.t1000_ceva.model.AttendantMenuTypes
 import com.example.t1000_ceva.model.ImageTitleItem
-import com.example.t1000_ceva.model.LoginTypeImageTitleItem
-import com.example.t1000_ceva.model.POSLoginTypes
 import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
 
 
@@ -70,6 +68,7 @@ class AttendantMenuFragment : Fragment(R.layout.fragment_attendant_menu) {
         list.adapter = ImageTitleAdapter(requireActivity(), attendantTypeList) {
             when (attendantTypeList[it].attendantMenuTypes) {
                 AttendantMenuTypes.DEPOSIT -> {
+                    navController.navigate(R.id.action_attendantMenuFragment_to_validateAccountNumberFragment)
                 }
                 AttendantMenuTypes.TRANSFER -> {
                 }

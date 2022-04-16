@@ -9,5 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Welcome" />
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="Welcome to t1000_ceva" />
 </FrameLayout>

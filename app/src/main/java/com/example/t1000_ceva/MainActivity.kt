@@ -3,11 +3,12 @@ package com.example.t1000_ceva
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.t1000_ceva.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 

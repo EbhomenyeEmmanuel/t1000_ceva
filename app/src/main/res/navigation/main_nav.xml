@@ -27,7 +27,40 @@
     </fragment>
     <fragment
         android:id="@+id/attendantMenuFragment"
-        android:name="com.example.t1000_ceva.ui.AttendantMenuFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.AttendantMenuFragment"
         android:label="Attendant Menu"
-        tools:layout="@layout/fragment_attendant_menu" />
+        tools:layout="@layout/fragment_attendant_menu">
+        <action
+            android:id="@+id/action_attendantMenuFragment_to_validateAccountNumberFragment"
+            app:destination="@id/validateAccountNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmAccountNumberFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.ConfirmAccountNumberFragment"
+        android:label="Confirm Account Number"
+        tools:layout="@layout/fragment_confirm_account_number">
+        <action
+            android:id="@+id/action_confirmAccountNumberFragment_to_depositFragment"
+            app:destination="@id/depositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/validateAccountNumberFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.ValidateAccountNumberFragment"
+        android:label="fragment_validate_account_number"
+        tools:layout="@layout/fragment_validate_account_number">
+        <action
+            android:id="@+id/action_validateAccountNumberFragment_to_confirmAccountNumberFragment"
+            app:destination="@id/confirmAccountNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.deposit.DepositFragment"
+        android:label="fragment_deposit"
+        tools:layout="@layout/fragment_deposit">
+        <action
+            android:id="@+id/action_depositFragment_to_attendantMenuFragment"
+            app:destination="@id/attendantMenuFragment"
+            app:popUpTo="@+id/attendantMenuFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
