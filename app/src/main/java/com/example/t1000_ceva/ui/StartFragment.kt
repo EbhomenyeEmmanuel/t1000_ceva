@@ -10,14 +10,16 @@ import com.example.t1000_ceva.commons.navController
 import com.example.t1000_ceva.commons.showSnack
 import com.example.t1000_ceva.commons.viewBinding
 import com.example.t1000_ceva.databinding.FragmentStartBinding
-import com.example.t1000_ceva.model.LoginTypeImageTitleItem
-import com.example.t1000_ceva.model.POSLoginTypes
+import com.example.t1000_ceva.domain.model.LoginTypeImageTitleItem
+import com.example.t1000_ceva.domain.model.POSLoginTypes
 import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
 import com.example.t1000_ceva.utils.observeInLifecycle
 import com.example.t1000_ceva.viewmodels.FetchUserState
 import com.example.t1000_ceva.viewmodels.MainViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 
+@AndroidEntryPoint
 class StartFragment : Fragment(R.layout.fragment_start) {
     private val binding by viewBinding<FragmentStartBinding>()
     private val mainViewModel: MainViewModel by viewModels()

@@ -10,8 +10,8 @@ import com.example.t1000_ceva.commons.navController
 import com.example.t1000_ceva.commons.showSnack
 import com.example.t1000_ceva.commons.viewBinding
 import com.example.t1000_ceva.databinding.FragmentAttendantMenuBinding
-import com.example.t1000_ceva.model.AttendantMenuTypes
-import com.example.t1000_ceva.model.ImageTitleItem
+import com.example.t1000_ceva.domain.model.AttendantMenuTypes
+import com.example.t1000_ceva.domain.model.ImageTitleItem
 import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
 
 

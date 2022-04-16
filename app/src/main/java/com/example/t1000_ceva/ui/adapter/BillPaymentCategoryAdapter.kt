@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.t1000_ceva.databinding.BillPaymentTypeListItemBinding
-import com.example.t1000_ceva.model.domain.BillPaymentTypeItem
+import com.example.t1000_ceva.domain.BillPaymentTypeItem
 
 class BillPaymentCategoryAdapter(
     private val context: Context,

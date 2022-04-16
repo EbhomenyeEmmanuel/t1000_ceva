@@ -2,17 +2,14 @@ package com.example.t1000_ceva.ui.attendant.airtime
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView
 import com.example.t1000_ceva.R
 import com.example.t1000_ceva.commons.navController
 import com.example.t1000_ceva.commons.viewBinding
 import com.example.t1000_ceva.databinding.FragmentAirtimePurchaseBinding
-import com.example.t1000_ceva.databinding.FragmentAttendantMenuBinding
-import com.example.t1000_ceva.model.domain.AirtimeOperator
+import com.example.t1000_ceva.domain.AirtimeOperator
 
 class AirtimePurchaseFragment : Fragment(R.layout.fragment_airtime_purchase) {
     private val binding by viewBinding<FragmentAirtimePurchaseBinding>()

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.t1000_ceva.R
-import com.example.t1000_ceva.model.ImageTitleItem
+import com.example.t1000_ceva.domain.model.ImageTitleItem
 
 class ImageTitleAdapter(
     private val context: Activity,

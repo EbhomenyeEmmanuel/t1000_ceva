@@ -3,12 +3,9 @@ package com.example.t1000_ceva.viewmodels
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.t1000_ceva.model.domain.BillPaymentTypeItem
-import com.example.t1000_ceva.repositoryImp.MainRepository
+import com.example.t1000_ceva.domain.BillPaymentTypeItem
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 
 sealed class FetchBillPaymentCateState {
