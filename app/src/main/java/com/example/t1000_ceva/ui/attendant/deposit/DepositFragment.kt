@@ -16,7 +16,7 @@ class DepositFragment : Fragment(R.layout.fragment_deposit) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnPayForDeposit.setOnClickListener {
-            navController.navigate(R.id.action_depositFragment_to_attendantMenuFragment)
+
         }
     }
 }
