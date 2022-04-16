@@ -32,7 +32,7 @@
         android:id="@+id/account_number_txt_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="2020076821"
         android:textAlignment="center"
         android:textSize="16sp" />
 
@@ -50,7 +50,7 @@
         android:id="@+id/account_name_txt_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="I.T SOFTWARE UNIT - WELF. ACCT"
         android:textAlignment="center"
         android:textSize="16sp" />
 
