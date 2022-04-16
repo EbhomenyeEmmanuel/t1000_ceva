@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_attendantMenuFragment_to_airtimePurchaseFragment"
             app:destination="@id/airtimePurchaseFragment" />
+        <action
+            android:id="@+id/action_attendantMenuFragment_to_payBillsFragment"
+            app:destination="@id/payBillsFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmAccountNumberFragment"
@@ -71,4 +74,9 @@
         android:name="com.example.t1000_ceva.ui.attendant.airtime.AirtimePurchaseFragment"
         android:label="Airtime Purchase"
         tools:layout="@layout/fragment_airtime_purchase" />
+    <fragment
+        android:id="@+id/payBillsFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.pay_bills.PayBillsFragment"
+        android:label="fragment_pay_bills"
+        tools:layout="@layout/fragment_pay_bills" />
 </navigation>
