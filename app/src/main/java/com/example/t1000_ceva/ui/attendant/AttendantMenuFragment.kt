@@ -71,8 +71,11 @@ class AttendantMenuFragment : Fragment(R.layout.fragment_attendant_menu) {
                     navController.navigate(R.id.action_attendantMenuFragment_to_validateAccountNumberFragment)
                 }
                 AttendantMenuTypes.TRANSFER -> {
+                    //Same as deposit
+                    navController.navigate(R.id.action_attendantMenuFragment_to_validateAccountNumberFragment)
                 }
                 AttendantMenuTypes.AIRTIME -> {
+                    navController.navigate(R.id.action_attendantMenuFragment_to_airtimePurchaseFragment)
                 }
                 AttendantMenuTypes.PAY_BILLS -> {
                 }
