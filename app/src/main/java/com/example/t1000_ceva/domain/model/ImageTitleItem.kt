@@ -10,3 +10,10 @@ class LoginTypeImageTitleItem(
     title: String,
     icon: Drawable? = null
 ) : ImageTitleItem(icon, title)
+
+
+class WithdrawTypeImageTitleItem(
+    val withdrawTypes: WithdrawTypes,
+    title: String,
+    icon: Drawable? = null
+) : ImageTitleItem(icon, title)
