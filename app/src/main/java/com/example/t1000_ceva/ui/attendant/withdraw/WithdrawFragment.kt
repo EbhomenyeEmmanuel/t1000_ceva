@@ -48,7 +48,7 @@ class WithdrawFragment : Fragment(R.layout.fragment_withdraw) {
                     )
                 }
                 WithdrawTypes.CARD_WITHDRAWAL -> {
-
+                    navController.navigate(R.id.action_withdrawFragment_to_cardWithdrawalFragment)
                 }
                 else -> showSnack("Option unavailable")
             }

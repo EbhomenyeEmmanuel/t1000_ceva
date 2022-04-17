@@ -29,6 +29,7 @@
     <string name="enter_withdrawal_amount">Enter Withdrawal amount</string>
     <string name="generate_otp">Generate OTP</string>
     <string name="account_number">Account Number</string>
+    <string name="enter_pin">Enter pin</string>
 
 
 </resources>

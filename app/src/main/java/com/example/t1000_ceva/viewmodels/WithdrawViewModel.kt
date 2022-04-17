@@ -22,17 +22,29 @@ sealed class WithdrawCashState {
     class Error(val exception: Exception) : WithdrawCashState()
 }
 
+
+sealed class WithdrawFromCardState {
+    object Loading : WithdrawFromCardState()
+    object Success : WithdrawFromCardState()
+    class Error(val exception: Exception) : WithdrawFromCardState()
+}
+
 @HiltViewModel
 class WithdrawViewModel @Inject constructor() : ViewModel() {
 
     private lateinit var generateOTPJob: Job
     private lateinit var withdrawCashJob: Job
+    private lateinit var withdrawFromCardJob: Job
+
 
     private val appChannelForOTPGeneration = Channel<GenerateOTPState>(Channel.BUFFERED)
     val fetchGenerateOTPState = appChannelForOTPGeneration.receiveAsFlow()
 
     private val appChannelForCashWithdrawal = Channel<WithdrawCashState>(Channel.BUFFERED)
     val fetchCashWithdrawalState = appChannelForCashWithdrawal.receiveAsFlow()
+
+    private val appChannelFromCardWithdrawal = Channel<WithdrawFromCardState>(Channel.BUFFERED)
+    val fetchCardWithdrawalState = appChannelFromCardWithdrawal.receiveAsFlow()
 
     fun generateOTP() {
 
@@ -64,6 +76,22 @@ class WithdrawViewModel @Inject constructor() : ViewModel() {
                 appChannelForCashWithdrawal.send(WithdrawCashState.Success)
             } catch (e: Exception) {
                 appChannelForCashWithdrawal.send(WithdrawCashState.Error(Exception()))
+            }
+        }
+    }
+
+    fun startCardWithdrawalTransaction(pin: String) {
+        if (this::withdrawFromCardJob.isInitialized && withdrawFromCardJob.isActive) {
+            return
+        }
+
+        withdrawFromCardJob = viewModelScope.launch {
+            appChannelFromCardWithdrawal.send(WithdrawFromCardState.Loading)
+            try {
+                delay(2L)
+                appChannelFromCardWithdrawal.send(WithdrawFromCardState.Success)
+            } catch (e: Exception) {
+                appChannelFromCardWithdrawal.send(WithdrawFromCardState.Error(Exception()))
             }
         }
     }

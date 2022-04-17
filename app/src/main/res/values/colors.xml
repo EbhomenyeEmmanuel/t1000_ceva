@@ -11,4 +11,5 @@
     <color name="orange">@android:color/holo_orange_dark</color>
     <color name="grey">#808080</color>
     <color name="light_grey">#ECECEC</color>
+    <color name="common_bg">#f0f0f0</color>
 </resources>
