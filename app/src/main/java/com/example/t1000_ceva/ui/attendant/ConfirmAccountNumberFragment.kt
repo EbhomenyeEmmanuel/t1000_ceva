@@ -27,7 +27,8 @@ class ConfirmAccountNumberFragment : Fragment(R.layout.fragment_confirm_account_
                     navController.navigate(R.id.action_confirmAccountNumberFragment_to_depositFragment)
                 }
                 AttendantDestination.TRANSFER -> {
-
+                    //Same as Deposit
+                    navController.navigate(R.id.action_confirmAccountNumberFragment_to_depositFragment)
                 }
                 AttendantDestination.CASH_WITHDRAW -> {
                     navController.navigate(R.id.action_confirmAccountNumberFragment_to_cashWithdrawalFragment)

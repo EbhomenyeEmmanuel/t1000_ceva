@@ -12,8 +12,10 @@ import com.example.t1000_ceva.utils.observeInLifecycle
 import com.example.t1000_ceva.utils.viewBinding
 import com.example.t1000_ceva.viewmodels.BillPaymentViewModel
 import com.example.t1000_ceva.viewmodels.FetchBillPaymentCateState
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 
+@AndroidEntryPoint
 class PayBillsFragment : Fragment(R.layout.fragment_pay_bills) {
     private val binding by viewBinding<FragmentPayBillsBinding>()
     private val viewModel: BillPaymentViewModel by viewModels()

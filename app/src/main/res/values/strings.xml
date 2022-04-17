@@ -25,6 +25,10 @@
     <string name="enter_attendant_pin">Enter Attendant Pin</string>
     <string name="enter_deposit_amount">Enter Deposit Amount</string>
     <string name="enter_otp">Enter OTP</string>
+    <string name="otp">OTP</string>
+    <string name="enter_withdrawal_amount">Enter Withdrawal amount</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="account_number">Account Number</string>
 
 
 </resources>

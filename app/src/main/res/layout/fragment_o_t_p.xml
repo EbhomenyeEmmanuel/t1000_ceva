@@ -6,31 +6,48 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ui.attendant.ValidateAccountNumberFragment">
+    tools:context=".ui.attendant.withdraw.OTPFragment">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="24dp"
-        android:text="@string/account_number"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:textColor="@android:color/black"
+        android:text="@string/otp"
         android:textAlignment="center"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/accountNumberInputLayout"
+        android:id="@+id/edl_otp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="@string/enter_account_number">
+        android:hint="@string/enter_otp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/accountNumberEdit"
+            android:id="@+id/ed_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edl_attendant_pin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/enter_attendant_pin"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_attendant_pin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -38,12 +55,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_check_account"
+        android:id="@+id/btn_cash_withdrawal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:enabled="true"
-        android:text="Check"
+        android:text="@string/withdraw"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="bold"

@@ -22,32 +22,15 @@
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edl_otp"
+        android:id="@+id/edl_withdrawal_amount"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="@string/enter_otp">
+        android:hint="@string/enter_withdrawal_amount">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_otp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:maxLines="1" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edl_attendant_pin"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/enter_attendant_pin"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_attendant_pin"
+            android:id="@+id/ed_withdrawal_amount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -55,12 +38,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_cash_withdrawal"
+        android:id="@+id/btn_generate_otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:enabled="true"
-        android:text="@string/withdraw"
+        android:text="@string/generate_otp"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="bold"

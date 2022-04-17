@@ -15,7 +15,7 @@ import com.example.t1000_ceva.ui.adapter.ImageTitleAdapter
 import com.example.t1000_ceva.utils.navController
 import com.example.t1000_ceva.utils.showSnack
 import com.example.t1000_ceva.utils.viewBinding
-
+import dagger.hilt.android.AndroidEntryPoint
 
 class WithdrawFragment : Fragment(R.layout.fragment_withdraw) {
     private val binding by viewBinding<FragmentWithdrawBinding>()
