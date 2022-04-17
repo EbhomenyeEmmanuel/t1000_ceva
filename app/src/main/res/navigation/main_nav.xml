@@ -87,6 +87,9 @@
         <action
             android:id="@+id/action_withdrawFragment_to_validateAccountNumberFragment"
             app:destination="@id/validateAccountNumberFragment" />
+        <action
+            android:id="@+id/action_withdrawFragment_to_cardWithdrawalFragment"
+            app:destination="@id/cardWithdrawalFragment" />
     </fragment>
     <fragment
         android:id="@+id/cashWithdrawalFragment"
@@ -102,4 +105,27 @@
         android:name="com.example.t1000_ceva.ui.attendant.withdraw.OTPFragment"
         android:label="fragment_o_t_p"
         tools:layout="@layout/fragment_o_t_p" />
+    <fragment
+        android:id="@+id/cardWithdrawalFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.withdraw.CardWithdrawalFragment"
+        android:label="fragment_card_withdrawal"
+        tools:layout="@layout/fragment_card_withdrawal" >
+        <action
+            android:id="@+id/action_cardWithdrawalFragment_to_cardInputFragment"
+            app:destination="@id/cardInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardInputFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.withdraw.CardInputFragment"
+        android:label="fragment_card_input"
+        tools:layout="@layout/fragment_card_input" >
+        <action
+            android:id="@+id/action_cardInputFragment_to_pinEntryDialogFragment"
+            app:destination="@id/pinEntryDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinEntryDialogFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.withdraw.PinEntryDialogFragment"
+        android:label="fragment_pin_entry_dialog"
+        tools:layout="@layout/fragment_pin_entry_dialog" />
 </navigation>
