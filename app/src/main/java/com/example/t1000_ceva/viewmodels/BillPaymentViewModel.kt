@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.receiveAsFlow
 
 sealed class FetchBillPaymentCateState {
     object Loading : FetchBillPaymentCateState()
-    class Success(val categoryTypes: List<BillPaymentTypeItem>) : FetchBillPaymentCateState()
+    class Success(val categoryTypesList: List<BillPaymentTypeItem>) : FetchBillPaymentCateState()
     object Error : FetchBillPaymentCateState()
 }
 
@@ -21,32 +21,47 @@ class BillPaymentViewModel() :
     val fetchPaymentCategoriesState = appChannel.receiveAsFlow()
 
     init {
-        downloadPaymentCategoriesDetails()
+        getPaymentCategory()
     }
 
-    private fun downloadPaymentCategoriesDetails() {
+    fun getPaymentCategory(selectedItem: BillPaymentTypeItem? = null) {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 appChannel.send(FetchBillPaymentCateState.Loading)
                 try {
-                    //call repo
                     delay(1L)
-                    appChannel.send(
-                        FetchBillPaymentCateState.Success(
-                            listOf(
-                                BillPaymentTypeItem(0, "Betting And Lottery"),
-                                BillPaymentTypeItem(1, "Cable TV Bills"),
-                                BillPaymentTypeItem(2, "Mobile Recharge"),
-                                BillPaymentTypeItem(3, "School and Exam Fees"),
-                                BillPaymentTypeItem(4, "Toll Payments"),
-                                BillPaymentTypeItem(5, "Utility Bills"),
+                    if (selectedItem == null) {
+                        //call repo that gets initial data
+                        appChannel.send(
+                            FetchBillPaymentCateState.Success(
+                                listOf(
+                                    BillPaymentTypeItem(0, 1, "Betting And Lottery"),
+                                    BillPaymentTypeItem(1, 1, "Cable TV Bills"),
+                                    BillPaymentTypeItem(2, 1, "Mobile Recharge"),
+                                    BillPaymentTypeItem(3, 1, "School and Exam Fees"),
+                                    BillPaymentTypeItem(4, 1, "Toll Payments"),
+                                    BillPaymentTypeItem(5, 1, "Utility Bills"),
+                                )
                             )
                         )
-                    )
+                    } else {
+                        //Calls repo that gets data using selectedItem
+                        appChannel.send(
+                            FetchBillPaymentCateState.Success(
+                                listOf(
+                                    BillPaymentTypeItem(0, selectedItem.pageNumber, "ACTV"),
+                                    BillPaymentTypeItem(1, selectedItem.pageNumber, "DSTV"),
+                                    BillPaymentTypeItem(2, selectedItem.pageNumber, "GoTV"),
+                                    BillPaymentTypeItem(3, selectedItem.pageNumber, "MyTV"),
+                                    BillPaymentTypeItem(4, selectedItem.pageNumber, "Startimes"),
+                                )
+                            )
+                        )
+                    }
                 } catch (e: Throwable) {
                     Log.e(
                         this.javaClass.simpleName,
-                        "downloadPaymentCategoriesDetails: Error is ${e.message}"
+                        "getSelectedCategory: Error is ${e.message}"
                     )
                     appChannel.send(FetchBillPaymentCateState.Error)
                 }

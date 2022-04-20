@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bill_payment_stepper_nav"
+    app:startDestination="@id/firstPayBillsPageFragment">
+
+    <fragment
+        android:id="@+id/firstPayBillsPageFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.pay_bills.FirstPayBillsPageFragment"
+        android:label="fragment_first_pay_bills_page"
+        tools:layout="@layout/fragment_first_pay_bills_page" />
+    <fragment
+        android:id="@+id/secondPayBillsPageFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.pay_bills.SecondPayBillsPageFragment"
+        android:label="fragment_second_pay_bills_page"
+        tools:layout="@layout/fragment_second_pay_bills_page" />
+    <fragment
+        android:id="@+id/thirdPayBillsPageFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.pay_bills.ThirdPayBillsPageFragment"
+        android:label="fragment_third_pay_bills_page"
+        tools:layout="@layout/fragment_third_pay_bills_page" />
+    <fragment
+        android:id="@+id/fourthPayBillsPageFragment"
+        android:name="com.example.t1000_ceva.ui.attendant.pay_bills.FourthPayBillsPageFragment"
+        android:label="fragment_fourth_pay_bills_page"
+        tools:layout="@layout/fragment_fourth_pay_bills_page" />
+</navigation>
