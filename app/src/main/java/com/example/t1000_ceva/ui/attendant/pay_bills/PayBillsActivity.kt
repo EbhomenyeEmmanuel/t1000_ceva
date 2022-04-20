@@ -18,10 +18,10 @@ class PayBillsActivity : AppCompatActivity() {
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.frame_stepper) as NavHostFragment
-        val navController = navHostFragment.navController
+        val navigationController = navHostFragment.navController
 
         val stepper = binding.stepper
-        stepper.setupWithNavController(navController)
+        stepper.setupWithNavController(navigationController)
 
     }
 

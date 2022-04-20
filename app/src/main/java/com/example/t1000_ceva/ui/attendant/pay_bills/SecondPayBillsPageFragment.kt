@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.t1000_ceva.R
 import com.example.t1000_ceva.databinding.FragmentSecondPayBillsPageBinding
 import com.example.t1000_ceva.ui.adapter.BillPaymentCategoryAdapter
+import com.example.t1000_ceva.utils.navController
 import com.example.t1000_ceva.utils.observeInLifecycle
 import com.example.t1000_ceva.utils.viewBinding
 import com.example.t1000_ceva.viewmodels.BillPaymentViewModel
@@ -27,7 +28,8 @@ class SecondPayBillsPageFragment : Fragment(R.layout.fragment_second_pay_bills_p
 //        binding.pageTitle.visibility = if (item.paymentTypeName.isNotEmpty()) View.VISIBLE else View.GONE
 //        binding.pageTitle.text = item.paymentTypeName
         billPaymentCategoryAdapter = BillPaymentCategoryAdapter(requireContext()) { item ->
-           // viewModel.getPaymentCategory(item)
+            viewModel.getPaymentCategory(item)
+            navController.navigate(R.id.action_secondPayBillsPageFragment_to_thirdPayBillsPageFragment)
         }
         binding.billPaymentCategoryList.layoutManager = LinearLayoutManager(requireContext())
         binding.billPaymentCategoryList.adapter = billPaymentCategoryAdapter

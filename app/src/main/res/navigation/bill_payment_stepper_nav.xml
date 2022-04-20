@@ -9,17 +9,29 @@
         android:id="@+id/firstPayBillsPageFragment"
         android:name="com.example.t1000_ceva.ui.attendant.pay_bills.FirstPayBillsPageFragment"
         android:label="fragment_first_pay_bills_page"
-        tools:layout="@layout/fragment_first_pay_bills_page" />
+        tools:layout="@layout/fragment_first_pay_bills_page" >
+        <action
+            android:id="@+id/action_firstPayBillsPageFragment_to_secondPayBillsPageFragment"
+            app:destination="@id/secondPayBillsPageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondPayBillsPageFragment"
         android:name="com.example.t1000_ceva.ui.attendant.pay_bills.SecondPayBillsPageFragment"
         android:label="fragment_second_pay_bills_page"
-        tools:layout="@layout/fragment_second_pay_bills_page" />
+        tools:layout="@layout/fragment_second_pay_bills_page" >
+        <action
+            android:id="@+id/action_secondPayBillsPageFragment_to_thirdPayBillsPageFragment"
+            app:destination="@id/thirdPayBillsPageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/thirdPayBillsPageFragment"
         android:name="com.example.t1000_ceva.ui.attendant.pay_bills.ThirdPayBillsPageFragment"
         android:label="fragment_third_pay_bills_page"
-        tools:layout="@layout/fragment_third_pay_bills_page" />
+        tools:layout="@layout/fragment_third_pay_bills_page" >
+        <action
+            android:id="@+id/action_thirdPayBillsPageFragment_to_fourthPayBillsPageFragment"
+            app:destination="@id/fourthPayBillsPageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fourthPayBillsPageFragment"
         android:name="com.example.t1000_ceva.ui.attendant.pay_bills.FourthPayBillsPageFragment"
