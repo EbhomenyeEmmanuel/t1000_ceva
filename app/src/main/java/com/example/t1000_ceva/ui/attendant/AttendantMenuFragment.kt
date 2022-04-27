@@ -86,7 +86,7 @@ class AttendantMenuFragment : Fragment(R.layout.fragment_attendant_menu) {
                     navController.navigate(R.id.action_attendantMenuFragment_to_airtimePurchaseFragment)
                 }
                 AttendantMenuTypes.PAY_BILLS -> {
-                    navController.navigate(R.id.action_attendantMenuFragment_to_payBillsActivity)
+                    navController.navigate(R.id.action_attendantMenuFragment_to_payBillsFragment)
                 }
                 AttendantMenuTypes.WITHDRAW -> {
                     navController.navigate(R.id.action_attendantMenuFragment_to_withdrawFragment)
